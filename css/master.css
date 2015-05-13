@@ -1,0 +1,93 @@
+header {
+  background: #2ecc40;
+  color: #fff;
+}
+header .wrap {
+  width: 260px;
+  margin: 40px auto 50px auto;
+}
+header h1 {
+  font-weight: 400;
+  font-size: 3.7em;
+  margin: 0;
+}
+header h2 {
+  font-weight: 400;
+  font-size: 1em;
+  color: #698f41;
+  margin-top: -17px;
+  margin-left: 37px;
+}
+header h2 a {
+  color: #698f41;
+  text-decoration: none;
+  font-weight: 500;
+}
+header h2 a:hover {
+  color: #547234;
+}
+#main .field {
+  width: 70%;
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+#main label {
+  color: #84cb3c;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  display: block;
+}
+#main label small {
+  color: #ccc;
+  text-transform: none;
+}
+#main input[type=text],
+#main .results {
+  box-sizing: border-box;
+  font-family: inconsolata, mono;
+  color: #6a6a6a;
+  background: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 1.7em;
+  width: 100%;
+}
+#main input[type=text]:focus,
+#main .results:focus {
+  outline: 0;
+  border-color: #b0b0b0;
+}
+#main .results {
+  min-height: 300px;
+  font-size: 1.2em;
+}
+#main .results div {
+  margin-bottom: 0.4em;
+}
+#main .results div.match {
+  color: #52bcc6;
+}
+#main .align {
+  text-align: center;
+}
+#main .save {
+  background: #2ecc40;
+  border-radius: 4px;
+  font-size: 1.2em;
+  padding: 12px 33px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+footer {
+  opacity: 0.3;
+  margin: 50px 0;
+  text-align: center;
+}
+footer:hover {
+  opacity: 0.7;
+}
