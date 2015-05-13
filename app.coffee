@@ -6,17 +6,13 @@ css_pipeline = require 'css-pipeline'
 dynamic      = require 'dynamic-content'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
+    js_pipeline(files: 'assets/js/*.js'),
     css_pipeline(files: 'assets/css/*.styl'),
     dynamic()
   ]
-
-  stylus:
-    use: [axis(), rupture(), autoprefixer()]
-    sourcemap: true
 
   'coffee-script':
     sourcemap: true
