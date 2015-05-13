@@ -2,8 +2,8 @@
   "name": "crockagile.com",
   "description": "Personal Site of Jeffrey Crocker",
   "repository": {
-  "type": "git",
-  "url": "git://github.com/CrockAgile/crockagile.github.com.git"
+    "type": "git",
+    "url": "git://github.com/CrockAgile/crockagile.github.com.git"
   },
   "dependencies": {
     "autoprefixer-stylus": "0.5.x",

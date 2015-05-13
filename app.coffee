@@ -6,7 +6,7 @@ css_pipeline = require 'css-pipeline'
 dynamic      = require 'dynamic-content'
 
 module.exports =
-  ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['README.md', 'LICENSE', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
     js_pipeline(files: 'assets/js/*.js'),
