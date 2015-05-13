@@ -11,7 +11,7 @@ module.exports =
   extensions: [
     js_pipeline(files: 'assets/js/*.js'),
     css_pipeline(files: 'assets/css/*.styl'),
-    dynamic()
+    dynamic(write: 'content.json')
   ]
 
   'coffee-script':
