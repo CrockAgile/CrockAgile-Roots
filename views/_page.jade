@@ -33,25 +33,35 @@ html
     footer.page-footer.green.darken-1
       .container
         .row
-          .col.s3.offset-s1
+          .col.s5.offset-s1
             h5.white-text CONTACT           
             ul
               li
-                a.white-text(href='mailto:crockagile@gmail.com') CrockAgile@gmail.com   
-          .col.s3.offset-s1
+                a.white-text.valign-wrapper(href='mailto:crockagile@gmail.com')
+                  i.valign.small.mdi-communication-email
+                  span.valign Email
+              li
+                a.white-text.valign-wrapper(href='https://keybase.io/crockagile')
+                  i.valign.small.mdi-communication-vpn-key
+                  span.valign Keybase
+          .col.s5.offset-s1
             h5.white-text FOLLOW      
             ul
               li
-                a.white-text(href='https://twitter.com/CrockAgile') Twitter                
-          .col.s3.offset-s1
-            h5.white-text NAV       
-            ul
-              each page in pages
-                li
-                  a.white-text(href='#{page.url}')=page.title
+                a.white-text.valign-wrapper(href='https://twitter.com/CrockAgile')
+                  i.valign.small.mdi-communication-vpn-key
+                  span.valign Twitter
+              li
+                a.white-text.valign-wrapper(href='https://github.com/CrockAgile')
+                  i.valign.small.mdi-communication-vpn-key
+                  span.valign Github
+              li
+                a.white-text.valign-wrapper(href='https://www.reddit.com/user/CrockAgile/')
+                  i.valign.small.mdi-communication-vpn-key
+                  span.valign Reddit          
                    
       .footer-copyright.green.darken-3
-        .container.valign-wrapper
+        .container.valign-wrapper.center
           h5.valign Copyright &copy; 2015 Jeffrey Crocker. Hosted on 
             a.grey-text.text-lighten-3(href='https://github.com/CrockAgile/crockagile-roots') Github
   
