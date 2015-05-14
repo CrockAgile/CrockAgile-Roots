@@ -1,11 +1,6 @@
-doctype html
-html
+extends ../views/_page
 
-  include _header
-
-  body
-    h1= post.title
-    h4 by 
-      =author
-    block content
-    != js('/')
+block append content
+  h1= post.title
+  h4 by 
+    =author

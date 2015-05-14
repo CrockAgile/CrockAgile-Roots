@@ -6,7 +6,7 @@ css_pipeline = require 'css-pipeline'
 dynamic      = require 'dynamic-content'
 
 module.exports =
-  ignores: ['README.md', 'LICENSE', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['README.md', 'LICENSE', '**/_*', '.gitignore']
 
   extensions: [
     js_pipeline(files: 'assets/js/*.js'),
@@ -23,3 +23,21 @@ module.exports =
 
   locals:
     author: 'Jeffrey Crocker'
+    pages: [
+      {
+        title: 'ABOUT'
+        url: '/about.html'
+      },
+      {
+        title: 'BLOG'
+        url: '/blog.html'
+      },
+      {
+        title: 'CONTACT'
+        url: '/contact.html'
+      },
+      {
+        title: 'FUN'
+        url: '/fun.html'
+      }
+    ]

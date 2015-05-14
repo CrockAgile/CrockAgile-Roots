@@ -1,9 +1,60 @@
 doctype html
 html
-
-  include _header
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='Web Developer Blog Site')
+    meta(name='author', content= "Jeffrey Crocker")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title CrockAgile
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css', rel='stylesheet')
+    != css('/')
 
   body
-    block content
+    header
+      nav.grey.darken-4(role='navigation')
+        .nav-wrapper.container
+          a#logo-container.brand-logo(href='/') Logo
+          ul.right.hide-on-med-and-down
+            each page in pages
+              li
+                a(href='#{page.url}')=page.title
+          ul#nav-mobile.side-nav
+            each page in pages
+              li
+                a(href='#{page.url}')=page.title
+          a.button-collapse(href='#', data-activates='nav-mobile')
+            i.mdi-navigation-menu
+            
+    main.container
+      .section
+        block content
 
-    != js('/')
+    footer.page-footer.green.darken-1
+      .container
+        .row
+          .col.s3.offset-s1
+            h5.white-text CONTACT           
+            ul
+              li
+                a.white-text(href='mailto:crockagile@gmail.com') CrockAgile@gmail.com   
+          .col.s3.offset-s1
+            h5.white-text FOLLOW      
+            ul
+              li
+                a.white-text(href='https://twitter.com/CrockAgile') Twitter                
+          .col.s3.offset-s1
+            h5.white-text NAV       
+            ul
+              each page in pages
+                li
+                  a.white-text(href='#{page.url}')=page.title
+                   
+      .footer-copyright.green.darken-3
+        .container.valign-wrapper
+          h5.valign Copyright &copy; 2015 Jeffrey Crocker. Hosted on 
+            a.grey-text.text-lighten-3(href='https://github.com/CrockAgile/crockagile-roots') Github
+  
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js')
+  != js('/')
