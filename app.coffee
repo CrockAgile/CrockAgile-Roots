@@ -10,13 +10,13 @@ module.exports =
 
   extensions: [
     js_pipeline(files: 'assets/js/*.js'),
-    css_pipeline(files: 'assets/css/*.styl'),
+    css_pipeline(files: 'assets/css/**', out: 'css/build.css'),
     dynamic(write: 'content.json')
   ]
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]
-    sourcemap: true
+    sourcemap: false
 
   jade:
     pretty: true
