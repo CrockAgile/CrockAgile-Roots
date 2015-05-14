@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/crockagile
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://crockagile.com
+  * I am crockagile (https://keybase.io/crockagile) on keybase.
+  * I have a public key with fingerprint C384 7854 DE94 FD51 08CF  22DA CD11 DEF7 30C0 9884
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "c3847854de94fd5108cf22dacd11def730c09884",
+            "host": "keybase.io",
+            "key_id": "cd11def730c09884",
+            "kid": "01011baba6426f24d0f92fc911791985004609fd5e5f7c12ce57c4641cce998ee73f0a",
+            "uid": "e45738d54a7d5565844708e69c786d00",
+            "username": "crockagile"
+        },
+        "service": {
+            "hostname": "crockagile.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1421992700,
+    "expire_in": 157680000,
+    "prev": "20a9a0e1e6f36576abe35c2b23ac7998835c44056a4759d43b02dbe021b62ed8",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMIYAnicZZJdSBRRFMd3S9MUKyySpCyGqAcXvTNz52stC0Iqn4p0C1na7ty5sw6j
+M+vsarqWRfRJREIPlhEElWSa1UMaQh+7SpD2ElpGRA+GWiBCmeaDfdyRevLpcs75
+/3/3nMPpz1rqyfDeOb+x5nIxf807mCip9ZQlRucbGdXWGhh/I2OShUc3rDBxIo5h
+xRg/g3kZSrIANaJAXRNYIGOd4zSENZbViC7xAANFliHjYyrtqOugGBVFSYFh0xwN
+QobmchbrzYUCYAHLqkhFIuREnYMa0BVOxwrLSgqryAIAUAQK/ZoIuoRZDhNBwlCE
+LMZEUWRCJF4HiOJqF3AEChIvawJEkiYIoiBDKAGZiAqWZFEDwBVGiWOhauJ25djY
+RGGjijDHfQzN1xmYuEtwZ1mkKcB2NfVHHDtmY7uK1ipjsUjU73pjDRFXfJSooX+Y
+kGpYGt0lddQRJ2rYFuNnqRLHDJfLQo5VFE4CwMeQ+ojhkJDhKgRJlAFwsxGH1FEk
+B5CCAGGJqPMirSKV8ALmVI5HWKIbkGkEIRBEBCVB0SCvAk5TCeBYVeSIJjPuYDWW
+zfghbROFKTJqhC0Uq3Xo1MkXwRSPN8OzLHWJew2ejOWr/t/I0L20P1XD5tnWDYnJ
+Fdse904ZK5J9xQOBQWv9kPl1oqvCdMabZu+v7Tx+7m243jzybs1MfUsy/uBVQOpq
+TkkW5bVetAKTj84U7Zib6Nv0Mf3SdqX4WKG/7Ga72ENKTpuvf1x/vrHZ937dkpP9
+vsxPOQNp/kJ1MtRW9js/p6zjQnAlOpB79WBX+86gkugu/ZKa1nJ5162fY1fileXJ
+qYrzztOp/N7ZzozR4dW13m97pvfFTuxFzoSVOCRk9XwP775tPhMG++y8ePaT3jTb
+n3zzK9BiZ49vH0ncONU4Nucr9053iw9vbenpwE1mW/BuKdnatLk5/aVn/gOI547M
+7Pt8eH/mXyUrK8c=
+=VbBn
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crockagile
+
+==================================================================
