@@ -14,8 +14,12 @@ module.exports =
     dynamic(write: 'content.json')
   ]
 
-  'coffee-script':
+  stylus:
+    use: [axis(), rupture(), autoprefixer()]
     sourcemap: true
 
   jade:
     pretty: true
+
+  locals:
+    author: 'Jeffrey Crocker'

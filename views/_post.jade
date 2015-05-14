@@ -5,7 +5,7 @@ html
 
   body
     h1= post.title
-    h4 by #{post.author}
+    h4 by 
+      =author
     block content
-
     != js('/')
