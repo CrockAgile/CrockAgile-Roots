@@ -16,8 +16,9 @@ html
       nav.grey.darken-4(role='navigation')
         .nav-wrapper.container
           a.brand-logo(href='/')
-            object#logo(type='image/svg+xml', data='/img/crockagile.svg')
-              b.white-text CrockAgile
+            //- object#logo(type='image/svg+xml', data='/img/crockagile.svg')
+            //-   b.white-text CrockAgile
+            img#logo(src='/img/crockagile.svg')
           ul.right.hide-on-med-and-down
             each page in pages
               li
