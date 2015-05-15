@@ -16,8 +16,8 @@ html
       nav.grey.darken-4(role='navigation')
         .nav-wrapper.container
           a.brand-logo(href='/')
-            object#logo(type='image/svg+xml', data='img/crockagile.svg')
-              | Crock Agile
+            object#logo(type='image/svg+xml', data='/img/crockagile.svg')
+              b.white-text CrockAgile
           ul.right.hide-on-med-and-down
             each page in pages
               li
@@ -53,7 +53,7 @@ html
               b FOLLOW
             .row
               .col.m12.l3
-                a.white-text.valign-wrapper.center-align(href='https://twitter.com/CrockAgile')
+                a.white-text.valign-wrapper(href='https://twitter.com/CrockAgile')
                   i.fa.fa-twitter.fa-2x.fa-fw
                   span.valign Twitter
               .col.m12.l3
