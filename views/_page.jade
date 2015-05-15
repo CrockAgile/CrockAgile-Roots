@@ -8,10 +8,11 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title CrockAgile
     link(href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css', rel='stylesheet')
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', rel='stylesheet')
     != css('/')
 
   body
-    header
+    header.z-depth-2
       nav.grey.darken-4(role='navigation')
         .nav-wrapper.container
           a#logo-container.brand-logo(href='/') Logo
@@ -33,31 +34,33 @@ html
     footer.page-footer.green.darken-1
       .container
         .row
-          .col.s5.offset-s1
-            h5.white-text CONTACT           
-            ul
+          .col.s5.offset-1
+            h5.white-text.center-align
+              b CONTACT           
+            ul.center-align
               li
                 a.white-text.valign-wrapper(href='mailto:crockagile@gmail.com')
-                  i.valign.small.mdi-communication-email
+                  i.fa.fa-envelope-o.fa-2x.fa-fw
                   span.valign Email
               li
                 a.white-text.valign-wrapper(href='https://keybase.io/crockagile')
-                  i.valign.small.mdi-communication-vpn-key
+                  i.fa.fa-key.fa-2x.fa-fw
                   span.valign Keybase
-          .col.s5.offset-s1
-            h5.white-text FOLLOW      
-            ul
+          .col.s6
+            h5.white-text.center-align 
+              b FOLLOW
+            ul.center-align
               li
                 a.white-text.valign-wrapper(href='https://twitter.com/CrockAgile')
-                  i.valign.small.mdi-communication-vpn-key
+                  i.fa.fa-twitter.fa-2x.fa-fw
                   span.valign Twitter
               li
                 a.white-text.valign-wrapper(href='https://github.com/CrockAgile')
-                  i.valign.small.mdi-communication-vpn-key
+                  i.fa.fa-github.fa-2x.fa-fw
                   span.valign Github
               li
                 a.white-text.valign-wrapper(href='https://www.reddit.com/user/CrockAgile/')
-                  i.valign.small.mdi-communication-vpn-key
+                  i.fa.fa-reddit.fa-2x.fa-fw
                   span.valign Reddit          
                    
       .footer-copyright.green.darken-3

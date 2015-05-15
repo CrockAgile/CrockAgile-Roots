@@ -22,3 +22,7 @@ footer .footer-copyright h5 {
 footer i {
   margin: 0 0.5em;
 }
+footer ul li {
+  display: inline-block;
+  font-size: 1.1em;
+}
