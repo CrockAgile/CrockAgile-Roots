@@ -25,8 +25,8 @@ module.exports =
     author: 'Jeffrey Crocker'
     pages: [
       {
-        title: 'ABOUT'
-        url: '/about.html'
+        title: 'HOME'
+        url: '/index.html'
       },
       {
         title: 'BLOG'

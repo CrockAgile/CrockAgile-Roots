@@ -1,18 +1,43 @@
 body
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  display: flex
+  min-height: 100vh
+  flex-direction: column
 
 main
-  flex: 1 0 auto;
+  flex: 1 0 auto
 
-footer
+footer.page-footer
+  padding-top: 0
   .footer-copyright
     h5
       font-size: 100%
+      margin-right: auto
+      margin-left: auto
   i
     margin: 0 0.5em
   ul
     li
       display: inline-block
       font-size: 1.1em
+  .row
+    margin-bottom: 0
+
+header
+  object
+    pointer-events: none
+  margin-bottom: 25px
+
+#logo
+  height: 86px
+
+#profile
+  border: 5px solid #43A047
+
+.nav-wrapper.container
+  @media only screen and (min-width: 993px)
+    padding: 0
+
+#logo
+  @media only screen and (min-width: 993px)
+    position: relative
+    left: -50px

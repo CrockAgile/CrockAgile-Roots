@@ -12,10 +12,12 @@ html
     != css('/')
 
   body
-    header.z-depth-2
+    header.z-depth-2              
       nav.grey.darken-4(role='navigation')
         .nav-wrapper.container
-          a#logo-container.brand-logo(href='/') Logo
+          a.brand-logo(href='/')
+            object#logo(type='image/svg+xml', data='img/crockagile.svg')
+              | Crock Agile
           ul.right.hide-on-med-and-down
             each page in pages
               li
@@ -32,39 +34,38 @@ html
         block content
 
     footer.page-footer.green.darken-1
-      .container
+      .container.section
         .row
-          .col.s5.offset-1
+          .col.s4.offset-s2
             h5.white-text.center-align
               b CONTACT           
-            ul.center-align
-              li
-                a.white-text.valign-wrapper(href='mailto:crockagile@gmail.com')
+            .row
+              .col.m12.l3.offset-l3
+                a.white-text.valign-wrapper.center-align(href='mailto:crockagile@gmail.com')
                   i.fa.fa-envelope-o.fa-2x.fa-fw
                   span.valign Email
-              li
+              .col.m12.l3
                 a.white-text.valign-wrapper(href='https://keybase.io/crockagile')
                   i.fa.fa-key.fa-2x.fa-fw
                   span.valign Keybase
-          .col.s6
+          .col.s4
             h5.white-text.center-align 
               b FOLLOW
-            ul.center-align
-              li
-                a.white-text.valign-wrapper(href='https://twitter.com/CrockAgile')
+            .row
+              .col.m12.l3
+                a.white-text.valign-wrapper.center-align(href='https://twitter.com/CrockAgile')
                   i.fa.fa-twitter.fa-2x.fa-fw
                   span.valign Twitter
-              li
+              .col.m12.l3
                 a.white-text.valign-wrapper(href='https://github.com/CrockAgile')
                   i.fa.fa-github.fa-2x.fa-fw
                   span.valign Github
-              li
+              .col.m12.l3
                 a.white-text.valign-wrapper(href='https://www.reddit.com/user/CrockAgile/')
                   i.fa.fa-reddit.fa-2x.fa-fw
                   span.valign Reddit          
-                   
-      .footer-copyright.green.darken-3
-        .container.valign-wrapper.center
+      .footer-copyright.orange
+        .container.valign-wrapper
           h5.valign Copyright &copy; 2015 Jeffrey Crocker. Hosted on 
             a.grey-text.text-lighten-3(href='https://github.com/CrockAgile/crockagile-roots') Github
   
