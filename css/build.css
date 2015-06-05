@@ -16,20 +16,8 @@ main {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
-footer.page-footer {
-  padding-top: 0;
-}
-footer.page-footer .footer-copyright h5 {
-  font-size: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
 footer.page-footer i {
-  margin: 0 0.5em;
-}
-footer.page-footer ul li {
-  display: inline-block;
-  font-size: 1.1em;
+  margin: 0 0.3em 0.3em 0;
 }
 footer.page-footer .row {
   margin-bottom: 0;
@@ -40,8 +28,21 @@ header {
 header object {
   pointer-events: none;
 }
-#logo {
+#logo-svg {
   height: 86px;
+  position: relative;
+  left: 50px;
+}
+@media only screen and (max-width: 600px) {
+  #logo-svg {
+    height: 74px;
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #logo-agile {
+    display: none;
+  }
 }
 #profile {
   border: 5px solid #43a047;
@@ -49,11 +50,5 @@ header object {
 @media only screen and (min-width: 993px) {
   .nav-wrapper.container {
     padding: 0;
-  }
-}
-@media only screen and (min-width: 993px) {
-  #logo {
-    position: relative;
-    left: -50px;
   }
 }
