@@ -7,18 +7,8 @@ main
   flex: 1 0 auto
 
 footer.page-footer
-  padding-top: 0
-  .footer-copyright
-    h5
-      font-size: 100%
-      margin-right: auto
-      margin-left: auto
   i
-    margin: 0 0.5em
-  ul
-    li
-      display: inline-block
-      font-size: 1.1em
+    margin: 0 0.3em 0.3em 0
   .row
     margin-bottom: 0
 
@@ -27,8 +17,17 @@ header
     pointer-events: none
   margin-bottom: 25px
 
-#logo
+#logo-svg
   height: 86px
+  position: relative
+  left: 50px
+  @media only screen and (max-width: 600px)
+    height: 74px
+    left: 0px
+
+#logo-agile
+  @media only screen and (max-width: 750px)
+    display: none
 
 #profile
   border: 5px solid #43A047
@@ -36,8 +35,3 @@ header
 .nav-wrapper.container
   @media only screen and (min-width: 993px)
     padding: 0
-
-#logo
-  @media only screen and (min-width: 993px)
-    position: relative
-    left: -50px

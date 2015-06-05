@@ -15,11 +15,7 @@ html
     header.z-depth-2              
       nav.grey.darken-4(role='navigation')
         .nav-wrapper.container
-          a.brand-logo(href='/')
-            //- object#logo(type='image/svg+xml', data='/img/crockagile.svg')
-            //-   b.white-text CrockAgile
-            img#logo(src='/img/crockagile.svg')
-          ul.right.hide-on-med-and-down
+          ul.hide-on-med-and-down
             each page in pages
               li
                 a(href='#{page.url}')=page.title
@@ -29,46 +25,47 @@ html
                 a(href='#{page.url}')=page.title
           a.button-collapse(href='#', data-activates='nav-mobile')
             i.mdi-navigation-menu
+          a.right.brand-logo(href='/')
+            include ../assets/img/crockagile.svg
             
     main.container
       .section
         block content
 
     footer.page-footer.green.darken-1
-      .container.section
+      .container
         .row
-          .col.s4.offset-s2
-            h5.white-text.center-align
-              b CONTACT           
-            .row
-              .col.m12.l3.offset-l3
-                a.white-text.valign-wrapper.center-align(href='mailto:crockagile@gmail.com')
-                  i.fa.fa-envelope-o.fa-2x.fa-fw
-                  span.valign Email
-              .col.m12.l3
-                a.white-text.valign-wrapper(href='https://keybase.io/crockagile')
-                  i.fa.fa-key.fa-2x.fa-fw
-                  span.valign Keybase
-          .col.s4
-            h5.white-text.center-align 
-              b FOLLOW
-            .row
-              .col.m12.l3
-                a.white-text.valign-wrapper(href='https://twitter.com/CrockAgile')
-                  i.fa.fa-twitter.fa-2x.fa-fw
-                  span.valign Twitter
-              .col.m12.l3
-                a.white-text.valign-wrapper(href='https://github.com/CrockAgile')
-                  i.fa.fa-github.fa-2x.fa-fw
-                  span.valign Github
-              .col.m12.l3
-                a.white-text.valign-wrapper(href='https://www.reddit.com/user/CrockAgile/')
-                  i.fa.fa-reddit.fa-2x.fa-fw
-                  span.valign Reddit          
-      .footer-copyright.orange
-        .container.valign-wrapper
-          h5.valign Copyright &copy; 2015 Jeffrey Crocker. Hosted on 
-            a.grey-text.text-lighten-3(href='https://github.com/CrockAgile/crockagile-roots') Github
+          .col.l4.s12
+            h5.white-text CrockAgile
+            p.grey-text.text-lighten-3
+              | This is my personal website where I share my learning experiences, 
+              | skillset, and random things I enjoy. I generate the static site using
+              | Roots and host it for free on Github.
+          .col.l4.s12
+            h5.white-text Jeffrey Crocker
+            p.grey-text.text-lighten-3
+              | I am a fresh graduate from the University of Idaho with an 
+              | interest in Web Development and Security.
+          .col.l4.s12
+            
+            h5.white-text Connect With Me
+            a.white-text(href='mailto:crockagile@gmail.com')
+              i.fa.fa-2x.fa-envelope-o.circle
+            a.white-text(href='https://github.com/CrockAgile')
+              i.fa.fa-2x.fa-github.circle
+            a.white-text(href='https://www.linkedin.com/in/crockagile')
+              i.fa.fa-2x.fa-linkedin.circle
+            a.white-text(href='https://twitter.com/CrockAgile')
+              i.fa.fa-2x.fa-twitter.circle
+            a.white-text(href='https://www.reddit.com/user/CrockAgile/')
+              i.fa.fa-2x.fa-reddit.circle
+            a.white-text(href='https://keybase.io/crockagile')
+              i.fa.fa-2x.fa-key.circle                      
+      .footer-copyright.orange.darken-2
+        .container
+          b &copy 2015 Jeffrey Crocker
+          b 
+            a.right.grey-text.text-lighten-3(href='https://github.com/CrockAgile/crockagile-roots') Hosted on Github
   
   script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js')

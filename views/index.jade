@@ -1,18 +1,17 @@
 extends _page
 
-block content  
-  .row
-    .col.s12
-      .card-panel.orange.lighten-2.z-depth-2
-        .row.valign-wrapper
-          .col.l3.m4.s12
-            img#profile.circle.responsive-img.z-depth-3(alt='Jeffrey Crocker Profile Picture', src='img/prof.jpg')
-          .col.l9.m8.s12
-            p.black-text.flow-text.center.
-              this site is currently under construction
-            .divider
-            p.black-text.flow-text.center
-              so kindly withhold scathing judgment
-  .divider
+block content
   .section
-  
+    .row.valign-wrapper
+      .col.s12.m4.l3.hide-on-small-only
+        img#profile.center.circle.responsive-img.z-depth-2(alt='Jeffrey Crocker Profile Picture', src='img/prof.jpg')
+      .col.offset-l1.s12.m8.l8
+        .card.orange.z-depth-2
+          .card-content.white-text
+            span.card-title.valign-wrapper
+              i.mdi-social-person.fa-3x.left-align
+              span
+                h2 About Me
+
+            p.flow-text.center-align Hey, I am Jeffrey Crocker and I am a Giant and Good Guy
+          
