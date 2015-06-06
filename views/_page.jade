@@ -23,8 +23,8 @@ html
             each page in pages
               li
                 a(href='#{page.url}')=page.title
-          a.button-collapse(href='#', data-activates='nav-mobile')
-            i.mdi-navigation-menu
+          a.button-collapse(href='#', data-activates='nav-mobile').valign-wrapper
+            h4 Menu
           a.right.brand-logo(href='/')
             include ../assets/img/crockagile.svg
             
@@ -50,17 +50,19 @@ html
             
             h5.white-text Connect With Me
             a.white-text(href='mailto:crockagile@gmail.com')
-              i.fa.fa-2x.fa-envelope-o.circle
+              i.fa.fa-2x.fa-envelope-o
             a.white-text(href='https://github.com/CrockAgile')
-              i.fa.fa-2x.fa-github.circle
+              i.fa.fa-2x.fa-github
             a.white-text(href='https://www.linkedin.com/in/crockagile')
-              i.fa.fa-2x.fa-linkedin.circle
+              i.fa.fa-2x.fa-linkedin
             a.white-text(href='https://twitter.com/CrockAgile')
-              i.fa.fa-2x.fa-twitter.circle
-            a.white-text(href='https://www.reddit.com/user/CrockAgile/')
-              i.fa.fa-2x.fa-reddit.circle
+              i.fa.fa-2x.fa-twitter
+            a.white-text(href='https://www.reddit.com/user/CrockAgile')
+              i.fa.fa-2x.fa-reddit
+            a.white-text(href='http://www.twitch.tv/thegoo280')
+              i.fa.fa-2x.fa-twitch
             a.white-text(href='https://keybase.io/crockagile')
-              i.fa.fa-2x.fa-key.circle                      
+              i.fa.fa-2x.fa-key                    
       .footer-copyright.orange.darken-2
         .container
           b &copy 2015 Jeffrey Crocker
