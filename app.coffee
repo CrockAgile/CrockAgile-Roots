@@ -9,7 +9,7 @@ module.exports =
   ignores: ['README.md', 'LICENSE', '**/_*', '.gitignore']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.js'),
+    js_pipeline(files: 'assets/js/*.js', out: 'js/main.js'),
     css_pipeline(files: 'assets/css/**', out: 'css/build.css'),
     dynamic(write: 'content.json')
   ]
