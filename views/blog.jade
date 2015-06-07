@@ -1,23 +1,24 @@
 extends _page
 
 block content
-  h3 Blog
-  .post-card-container
-    -var sortedPosts = site.posts.sort(function(a,b) {
-    -  return new Date(b.date) - new Date(a.date);
-    -});
-    -for (var i=0; i< sortedPosts.length; i++)
-      -var classFactors = 'card post-card';
-      -if (i % 2)
-        -classFactors += ' post-triple-orange';
-      -else
-        -classFactors += ' post-triple-green';
-      -if (i % 4 == 0 || i % 4 == 3)
-        -classFactors += ' post-double-orange';
-      -else
-        -classFactors += ' post-double-green';
-      a(href=sortedPosts[i]._url,class='#{classFactors}')
-        .card-content.white-text
-          span.card-title= sortedPosts[i].title
-          p.post-card-date= sortedPosts[i].date
-          p= sortedPosts[i].description
+  .container
+    h3 Blog
+    .post-card-container
+      -var sortedPosts = site.posts.sort(function(a,b) {
+      -  return new Date(b.date) - new Date(a.date);
+      -});
+      -for (var i=0; i< sortedPosts.length; i++)
+        -var classFactors = 'card post-card';
+        -if (i % 2)
+          -classFactors += ' post-triple-orange';
+        -else
+          -classFactors += ' post-triple-green';
+        -if (i % 4 == 0 || i % 4 == 3)
+          -classFactors += ' post-double-orange';
+        -else
+          -classFactors += ' post-double-green';
+        a(href=sortedPosts[i]._url,class='#{classFactors}')
+          .card-content.white-text
+            span.card-title= sortedPosts[i].title
+            p.post-card-date= sortedPosts[i].date
+            p= sortedPosts[i].description
