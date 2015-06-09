@@ -2,5 +2,40 @@ extends _page
 
 block content
   .container
-    h3 Contact
-      p Content to come!
+    .row
+      .col
+        h2.header.section-title
+          span.valign-wrapper
+            i.mdi-action-perm-contact-cal.left-align
+            | Contact Me
+    .row
+      .col.s10.m6.l5
+        ul.collection.with-header#contacts
+          a.collection-item(href='mailto:crockagile@gmail.com').orange-text
+            h5.title
+              strong Email
+              i.fa.fa-envelope-o.right
+          a.collection-item(href='https://github.com/CrockAgile').green-text.text-darken-1
+            h5.title
+              strong Github
+              i.fa.fa-github.right
+          a.collection-item(href='https://www.linkedin.com/in/crockagile').orange-text
+            h5.title
+              strong LinkedIn
+              i.fa.fa-linkedin.right
+          a.collection-item(href='https://twitter.com/CrockAgile').green-text.text-darken-1
+            h5.title
+              strong Twitter
+              i.fa.fa-twitter.right
+          a.collection-item(href='https://www.reddit.com/user/CrockAgile').orange-text
+            h5.title
+              strong Reddit
+              i.fa.fa-reddit.right
+          a.collection-item(href='http://www.twitch.tv/thegoo280').green-text.text-darken-1
+            h5.title
+              strong Twitch
+              i.fa.fa-twitch.right
+          a.collection-item(href='https://keybase.io/crockagile').orange-text
+            h5.title
+              strong Keybase
+              i.fa.fa-key.right

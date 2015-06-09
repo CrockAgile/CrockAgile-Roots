@@ -1,21 +1,29 @@
 extends _page
 
 block content
-  .container.section
-    .row.valign-wrapper
-      .col.s12.m4.l3.hide-on-small-only
-        img#profile.center.circle.responsive-img.z-depth-2(alt='Jeffrey Crocker Profile Picture', src='img/prof.jpg')
-      .col.offset-l1.s12.m8.l8
-        .card.orange.z-depth-2
-          .card-content.white-text
-            span.card-title.valign-wrapper
-              i.mdi-social-person.fa-3x.left-align
-              span
-                h2 About Me
-
-            p.flow-text.center-align
-              | Hey, I am Jeffrey Crocker and I am currently in the process
-              | of building my own personal site! So please withold scathing
-              | judgments until it is completed. Feel free to check back in a
-              | week or so.
-          
+  .container
+    .section
+      .row
+        .col.s10.offset-s1.m5.l4
+          img#profile.responsive-img.circle.z-depth-2(alt='Jeffrey Crocker Profile Picture', src='img/prof.jpg')
+        .col.s12.m7.l7.offset-l1.white-text
+          .card.orange.z-depth-2
+            .card-content
+              h4.header.section-title
+                span.valign-wrapper
+                  i.mdi-social-person.fa-2x.left-align
+                  | About Me
+              p.flow-text
+                | Hello! I am 
+                strong Jeffrey Crocker 
+                | and I am a 
+                strong Web Developer 
+                | with a passion for 
+                strong games
+                | , 
+                strong running
+                | , and 
+                strong podcasts
+                | .
+                
+              

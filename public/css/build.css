@@ -45,7 +45,14 @@ header object {
   }
 }
 #profile {
-  border: 5px solid #43a047;
+  border: 3px solid #43a047;
+}
+#contacts {
+  border-width: 5px;
+  border-color: #616161;
+}
+#contacts .collection-item {
+  border-width: 3px;
 }
 @media only screen and (min-width: 993px) {
   .nav-wrapper.container {
