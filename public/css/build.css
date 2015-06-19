@@ -26,25 +26,35 @@ footer.page-footer .row {
   text-decoration: underline;
   font-size: 1.1em;
 }
-#logo-svg {
+.logo-svg {
   height: 85px;
   position: relative;
-  left: 120px;
 }
 @media only screen and (max-width: 600px) {
-  #logo-svg {
+  .logo-svg {
     height: 74px;
   }
 }
-@media only screen and (max-width: 840px) {
-  #logo-svg {
-    left: 0px;
+@media only screen and (min-width: 993px) {
+  .logo-svg {
+    left: 120px;
   }
 }
-@media only screen and (max-width: 750px) {
-  #logo-agile {
+#logo-small {
+  display: none;
+}
+@media only screen and (max-width: 680px) {
+  #logo-small {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #logo-large {
     display: none;
   }
+}
+#prof .card-title {
+  top: 0;
 }
 #contacts {
   border-radius: 20px;

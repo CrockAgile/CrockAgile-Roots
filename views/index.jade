@@ -8,9 +8,9 @@ block content
         .col.s12.center-align
           h2 
             strong Jeffrey Crocker
-          h5 Apprentice Craftsman of 
-           br
-           | Functional &amp Engaging Software
+          h5 Apprentice Software
+            br
+            | Craftsman
           br
           a.orange.waves-effect.waves-light.btn(href='/contact.html')
             i.mdi-communication-chat.right 
@@ -20,10 +20,12 @@ block content
       .row
         .col.s8.m5.l4.offset-s2
           .card.orange.z-depth-2
-            .card-image
-              img(src='/img/prof.jpg')
-              span.card-title 
-                strong About Me
+            .card-image#prof
+              img(src='/img/prof2.jpg')
+              span.card-title.orange-text
+                h4 
+                  strong About Me 
+                  i.fa.fa-arrow-right
             .card-content.white-text
               p#bio A Programmer &amp Physicist who enjoys 
                 strong running
@@ -36,7 +38,7 @@ block content
         .col.s12.m7.l7.offset-l1.card.z-depth-2
           h2.center-align.green-text.text-darken-1
             i.mdi-image-flash-on.medium
-            strong Skillset
+            strong Skills
           .row
             .col.s6
               h4.center-align 
@@ -77,18 +79,22 @@ block content
         .col.s12
           h2.orange-text
             i.mdi-social-mood.medium
-            strong Enjoyments
+            strong Delights
       .row
         .col.s12.m10.offset-m1
           ul.tabs#enjoyments.z-depth-1
             li.tab.col.s3
-              a.active(href='#podcasts') Podcasts
+              a.active(href='#podcasts').flow-text
+                i.fa.fa-headphones
             li.tab.col.s3
-              a(href='#running') Running
+              a(href='#running').flow-text
+                i.fa.fa-heartbeat
             li.tab.col.s3
-              a(href='#games') Games
+              a(href='#games').flow-text
+                i.fa.fa-trophy
             li.tab.col.s3
-              a(href='#quotes') Quotes
+              a(href='#quotes').flow-text
+                i.fa.fa-quote-right
           #podcasts.enjoyment.col.s12.white
             img(src='/img/podcasts/hi.jpeg')
             img(src='/img/podcasts/bombcast.jpg')
