@@ -1,5 +1,6 @@
 extends _page
-
+block active-page
+  -var selected = 'CONTACT';
 block content
   .container
     .row
@@ -10,32 +11,32 @@ block content
             | Contact Me
     .row
       .col.s10.m6.l5
-        ul.collection.with-header#contacts
-          a.collection-item(href='mailto:crockagile@gmail.com').orange-text
+        ul.collection.with-header#contacts.z-depth-2
+          a.collection-item(href='mailto:crockagile@gmail.com').green.lighten-1.white-text
             h5.title
               strong Email
               i.fa.fa-envelope-o.right
-          a.collection-item(href='https://github.com/CrockAgile').green-text.text-darken-1
+          a.collection-item(href='https://github.com/CrockAgile').orange.white-text
             h5.title
               strong Github
               i.fa.fa-github.right
-          a.collection-item(href='https://www.linkedin.com/in/crockagile').orange-text
+          a.collection-item(href='https://www.linkedin.com/in/crockagile').green.lighten-1.white-text
             h5.title
               strong LinkedIn
               i.fa.fa-linkedin.right
-          a.collection-item(href='https://twitter.com/CrockAgile').green-text.text-darken-1
+          a.collection-item(href='https://twitter.com/CrockAgile').orange.white-text
             h5.title
               strong Twitter
               i.fa.fa-twitter.right
-          a.collection-item(href='https://www.reddit.com/user/CrockAgile').orange-text
+          a.collection-item(href='https://www.reddit.com/user/CrockAgile').green.lighten-1.white-text
             h5.title
               strong Reddit
               i.fa.fa-reddit.right
-          a.collection-item(href='http://www.twitch.tv/thegoo280').green-text.text-darken-1
+          a.collection-item(href='http://www.twitch.tv/thegoo280').orange.white-text
             h5.title
               strong Twitch
               i.fa.fa-twitch.right
-          a.collection-item(href='https://keybase.io/crockagile').orange-text
+          a.collection-item.collection-item-last(href='https://keybase.io/crockagile').green.lighten-1.white-text
             h5.title
               strong Keybase
               i.fa.fa-key.right

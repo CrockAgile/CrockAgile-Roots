@@ -12,17 +12,27 @@ html
     != css('/')
 
   body
-    header.z-depth-2              
+    block active-page
+      -var selected = 'HOME';
+    header.z-depth-2
       nav.grey.darken-4(role='navigation')
         .nav-wrapper.container
           ul.hide-on-med-and-down
             each page in pages
-              li
-                a(href='#{page.url}')=page.title
+              if selected === page.title
+                li.active
+                  a(href='#{page.url}')=page.title
+              else
+                li
+                  a(href='#{page.url}')=page.title
           ul#nav-mobile.side-nav
             each page in pages
-              li
-                a(href='#{page.url}')=page.title
+              if selected === page.title
+                li.active
+                  a(href='#{page.url}')=page.title
+              else
+                li
+                  a(href='#{page.url}')=page.title
           a.button-collapse(href='#', data-activates='nav-mobile').valign-wrapper
             h5 Menu
           a.right.brand-logo(href='/')
@@ -34,24 +44,18 @@ html
     footer.page-footer.green.darken-1
       .container
         .row
-          .col.l5.s12
+          .col.l7.s12
             h5.white-text CrockAgile
             p.grey-text.text-lighten-3
-              | This is Jeffrey Crocker's personal site. I share my learning experiences, 
-              | resources, and random enjoyments. I generate the static site using 
+              | This is Jeffrey Crocker's personal site, a place share learning experiences, 
+              | resources, and random enjoyments. The site is generated using 
               a.orange-text(href='http://roots.cx') Roots
-              | , style it with 
+              | , styled with 
               a.orange-text(href='http://materializecss.com/') Materialize
-              | , and host it on 
+              | , and hosted on 
               a.orange-text(href='https://github.com/CrockAgile/crockagile-roots')  Github
               | .
-          .col.l3.s12
-            h5.white-text Jeffrey Crocker
-            p.grey-text.text-lighten-3
-              | I am a fresh graduate from the University of Idaho with an 
-              | interest in Web Development and Security.
-          .col.l4.s12
-            
+          .col.l4.s12.offset-l1
             h5.white-text Connect With Me
             a.white-text(href='mailto:crockagile@gmail.com')
               i.fa.fa-2x.fa-envelope-o

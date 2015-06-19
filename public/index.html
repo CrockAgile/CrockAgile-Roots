@@ -11,20 +11,20 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"><link rel='stylesheet' href='/css/build.css' />
   </head>
   <body>
-    <header class="z-depth-2">             
+    <header class="z-depth-2">
       <nav role="navigation" class="grey darken-4">
         <div class="nav-wrapper container">
           <ul class="hide-on-med-and-down">
-            <li><a href="/index.html">HOME</a></li>
+            <li class="active"><a href="/index.html">HOME</a></li>
             <li><a href="/blog.html">BLOG</a></li>
             <li><a href="/contact.html">CONTACT</a></li>
-            <li><a href="/fun.html">FUN</a></li>
+            <li><a href="/laboratory.html">LABORATORY</a></li>
           </ul>
           <ul id="nav-mobile" class="side-nav">
-            <li><a href="/index.html">HOME</a></li>
+            <li class="active"><a href="/index.html">HOME</a></li>
             <li><a href="/blog.html">BLOG</a></li>
             <li><a href="/contact.html">CONTACT</a></li>
-            <li><a href="/fun.html">FUN</a></li>
+            <li><a href="/laboratory.html">LABORATORY</a></li>
           </ul><a href="#" data-activates="nav-mobile" class="button-collapse valign-wrapper">
             <h5>Menu</h5></a><a href="/" class="right brand-logo"><svg id='logo-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213.60001 39.20002">
   <path
@@ -61,17 +61,106 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="section">
+      <div class="section grey lighten-3">
+        <div class="container">
           <div class="row">
-            <div class="col s10 offset-s1 m5 l4"><img id="profile" alt="Jeffrey Crocker Profile Picture" src="img/prof.jpg" class="responsive-img circle z-depth-2"></div>
-            <div class="col s12 m7 l7 offset-l1 white-text">
+            <div class="col s12 center-align">
+              <h2> <strong>Jeffrey Crocker</strong></h2>
+              <h5>Apprentice Craftsman of <br>Functional &amp Engaging Software</h5><br><a href="/contact.html" class="orange waves-effect waves-light btn"><i class="mdi-communication-chat right"> </i>Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col s8 m5 l4 offset-s2">
               <div class="card orange z-depth-2">
-                <div class="card-content">
-                  <h4 class="header section-title"><span class="valign-wrapper"><i class="mdi-social-person fa-2x left-align"></i>About Me</span></h4>
-                  <p class="flow-text">Hello! I am <strong>Jeffrey Crocker </strong>and I am a <strong>Web Developer </strong>with a passion for <strong>games</strong>, <strong>running</strong>, and <strong>podcasts</strong>.</p>
+                <div class="card-image"><img src="/img/prof.jpg"><span class="card-title"> <strong>About Me</strong></span></div>
+                <div class="card-content white-text">
+                  <p id="bio">A Programmer &amp Physicist who enjoys <strong>running</strong>, <strong>podcasts</strong>, and <strong>web development</strong>.</p>
                 </div>
               </div>
+            </div>
+            <div class="col s12 m7 l7 offset-l1 card z-depth-2">
+              <h2 class="center-align green-text text-darken-1"><i class="mdi-image-flash-on medium"></i><strong>Skillset</strong></h2>
+              <div class="row">
+                <div class="col s6">
+                  <h4 class="center-align"> <strong>Front End</strong></h4>
+                  <div class="flex"><span> <img src="/img/logos/html5-logo.png">
+                      <h5 class="center-align">HTML5</h5></span><span><img src="/img/logos/css3-logo.png">
+                      <h5 class="center-align">CSS3</h5></span><span><img src="/img/logos/javascript-logo.svg">
+                      <h5 class="center-align">JavaScript</h5></span><span><img src="/img/logos/angular-logo.png">
+                      <h5 class="center-align">Angular</h5></span></div>
+                </div>
+                <div class="col s6">
+                  <h4 class="center-align"><strong>Back End</strong></h4>
+                  <div class="flex"><span><img src="/img/logos/java-logo.png">
+                      <h5 class="center-align">Java</h5></span><span><img src="/img/logos/C-logo.png">
+                      <h5 class="center-align">C / C++</h5></span><span><img src="/img/logos/python-logo.png">
+                      <h5 class="center-align">Python</h5></span><span><img src="/img/logos/node-logo.png">
+                      <h5 class="center-align">Node.js</h5></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section grey lighten-3">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h2 class="orange-text"><i class="mdi-social-mood medium"></i><strong>Enjoyments</strong></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m10 offset-m1">
+              <ul id="enjoyments" class="tabs z-depth-1">
+                <li class="tab col s3"><a href="#podcasts" class="active">Podcasts</a></li>
+                <li class="tab col s3"><a href="#running">Running</a></li>
+                <li class="tab col s3"><a href="#games">Games</a></li>
+                <li class="tab col s3"><a href="#quotes">Quotes</a></li>
+              </ul>
+              <div id="podcasts" class="enjoyment col s12 white"><img src="/img/podcasts/hi.jpeg"><img src="/img/podcasts/bombcast.jpg"><img src="/img/podcasts/ra.jpeg"><img src="/img/podcasts/pm.jpeg"><img src="/img/podcasts/htde.jpeg"><img src="/img/podcasts/js5.jpeg"><img src="/img/podcasts/su.jpeg"><img src="/img/podcasts/taz.jpeg"><img src="/img/podcasts/beastcast.jpeg"><img src="/img/podcasts/jsj.jpeg"><img src="/img/podcasts/serial.jpeg"><img src="/img/podcasts/trh.jpeg"><img src="/img/podcasts/cortex.jpeg"><img src="/img/podcasts/aia.jpeg"><img src="/img/podcasts/sn.jpeg"><img src="/img/podcasts/dhnj.jpeg"></div>
+              <div id="running" class="enjoyment col s12 white">
+                <div class="slider">
+                  <ul class="slides">
+                    <li><img src="/img/running/brooks_inflatable.jpg">
+                      <div class="caption left-align">
+                        <h3>Half-Marathon</h3>
+                        <h4>Rock & Roll 2015</h4>
+                      </div>
+                    </li>
+                    <li><img src="/img/running/newshoes.jpg">
+                      <div class="caption center-align">
+                        <h3>Trusty Companions</h3>
+                        <h4 class="light yellow-text text-lighten-1"> <strong>Burn Bright</strong></h4>
+                      </div>
+                    </li>
+                    <li><img src="/img/running/jogg.jpg">
+                      <div class="caption left-align">
+                        <h3>Smiles</h3>
+                        <h4>Victory Lap</h4>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="games" class="enjoyment col s12 white">
+                <h4>Games</h4>
+              </div>
+              <div id="quotes" class="enjoyment col s12 white"> 
+                <h4>Quotes</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h2 class="green-text text-darken-1"><i class="mdi-av-my-library-books medium"></i><strong>Library</strong></h2>
             </div>
           </div>
         </div>
@@ -80,21 +169,14 @@
     <footer class="page-footer green darken-1">
       <div class="container">
         <div class="row">
-          <div class="col l5 s12">
+          <div class="col l7 s12">
             <h5 class="white-text">CrockAgile</h5>
             <p class="grey-text text-lighten-3">
-              This is Jeffrey Crocker's personal site. I share my learning experiences, 
-              resources, and random enjoyments. I generate the static site using <a href="http://roots.cx" class="orange-text">Roots</a>, style it with <a href="http://materializecss.com/" class="orange-text">Materialize</a>, and host it on <a href="https://github.com/CrockAgile/crockagile-roots" class="orange-text"> Github</a>.
+              This is Jeffrey Crocker's personal site, a place share learning experiences, 
+              resources, and random enjoyments. The site is generated using <a href="http://roots.cx" class="orange-text">Roots</a>, styled with <a href="http://materializecss.com/" class="orange-text">Materialize</a>, and hosted on <a href="https://github.com/CrockAgile/crockagile-roots" class="orange-text"> Github</a>.
             </p>
           </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Jeffrey Crocker</h5>
-            <p class="grey-text text-lighten-3">
-              I am a fresh graduate from the University of Idaho with an 
-              interest in Web Development and Security.
-            </p>
-          </div>
-          <div class="col l4 s12">
+          <div class="col l4 s12 offset-l1">
             <h5 class="white-text">Connect With Me</h5><a href="mailto:crockagile@gmail.com" class="white-text"><i class="fa fa-2x fa-envelope-o"></i></a><a href="https://github.com/CrockAgile" class="white-text"><i class="fa fa-2x fa-github"></i></a><a href="https://www.linkedin.com/in/crockagile" class="white-text"><i class="fa fa-2x fa-linkedin"></i></a><a href="https://twitter.com/CrockAgile" class="white-text"><i class="fa fa-2x fa-twitter"></i></a><a href="https://www.reddit.com/user/CrockAgile" class="white-text"><i class="fa fa-2x fa-reddit"></i></a><a href="http://www.twitch.tv/thegoo280" class="white-text"><i class="fa fa-2x fa-twitch"></i></a><a href="https://keybase.io/crockagile" class="white-text"><i class="fa fa-2x fa-key">                   </i></a>
           </div>
         </div>

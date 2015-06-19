@@ -37,7 +37,7 @@ module.exports =
         url: '/contact.html'
       },
       {
-        title: 'FUN'
-        url: '/fun.html'
+        title: 'LABORATORY'
+        url: '/laboratory.html'
       }
     ]

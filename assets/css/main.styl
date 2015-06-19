@@ -7,40 +7,69 @@ main
   flex: 1 0 auto
 
 footer.page-footer
-  i
-    margin: 0 0.3em 0.3em 0
   .row
     margin-bottom: 0
 
-header
-  object
-    pointer-events: none
-  margin-bottom: 25px
+#bio
+  font-size: 1.5em
+  strong
+    text-decoration: underline
+    font-size: 1.1em
 
 #logo-svg
-  height: 86px
+  height: 85px
   position: relative
-  left: 50px
+  left: 120px
   @media only screen and (max-width: 600px)
     height: 74px
+
+  @media only screen and (max-width: 840px)
     left: 0px
 
 #logo-agile
   @media only screen and (max-width: 750px)
     display: none
 
-#profile
-  border: 3px solid #43A047
-
 #contacts
-  border-width: 5px
-  border-color: #616161
+  border-radius: 20px
   .collection-item
-    border-width: 3px
+    transition: padding-left 0.3s ease-in
+    &:hover
+      padding-left: 20%
+
+#enjoyments
+  .tab a
+    color: #43a047
+    font-weight: bold
+  .indicator
+    background-color: #ff9800
+.enjoyment
+  min-height: 520px
+#podcasts
+  display: flex
+  flex-wrap: wrap
+  align-content: center
+  img
+    height: 144px
+    padding: 10px
+.flex
+  img
+    margin: 15px 15px 0 15px
+    height: 100px
+    flex-shrink: 0
+  display: flex
+  flex-wrap: wrap
+  flow-direction: column
+  align-items: center
+  justify-content: space-around
 
 .nav-wrapper.container
-  @media only screen and (min-width: 993px)
-    padding: 0
+  li.active
+    a
+      color: #FF9800
+
+i
+  margin: 0 0.3em 0.3em 0
 
 .post-card
   margin: 10px 10px 0 0

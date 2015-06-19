@@ -1,29 +1,140 @@
 extends _page
 
 block content
-  .container
-    .section
+  -var selected = 'HOME';
+  .section.grey.lighten-3
+    .container
       .row
-        .col.s10.offset-s1.m5.l4
-          img#profile.responsive-img.circle.z-depth-2(alt='Jeffrey Crocker Profile Picture', src='img/prof.jpg')
-        .col.s12.m7.l7.offset-l1.white-text
+        .col.s12.center-align
+          h2 
+            strong Jeffrey Crocker
+          h5 Apprentice Craftsman of 
+           br
+           | Functional &amp Engaging Software
+          br
+          a.orange.waves-effect.waves-light.btn(href='/contact.html')
+            i.mdi-communication-chat.right 
+            | Get In Touch
+  .section
+    .container
+      .row
+        .col.s8.m5.l4.offset-s2
           .card.orange.z-depth-2
-            .card-content
-              h4.header.section-title
-                span.valign-wrapper
-                  i.mdi-social-person.fa-2x.left-align
-                  | About Me
-              p.flow-text
-                | Hello! I am 
-                strong Jeffrey Crocker 
-                | and I am a 
-                strong Web Developer 
-                | with a passion for 
-                strong games
-                | , 
+            .card-image
+              img(src='/img/prof.jpg')
+              span.card-title 
+                strong About Me
+            .card-content.white-text
+              p#bio A Programmer &amp Physicist who enjoys 
                 strong running
-                | , and 
+                | , 
                 strong podcasts
+                | , and 
+                strong web development
                 | .
-                
+
+        .col.s12.m7.l7.offset-l1.card.z-depth-2
+          h2.center-align.green-text.text-darken-1
+            i.mdi-image-flash-on.medium
+            strong Skillset
+          .row
+            .col.s6
+              h4.center-align 
+               strong Front End
+              .flex
+                span 
+                  img(src='/img/logos/html5-logo.png')
+                  h5.center-align HTML5
+                span
+                  img(src='/img/logos/css3-logo.png')
+                  h5.center-align CSS3
+                span
+                  img(src='/img/logos/javascript-logo.svg')
+                  h5.center-align JavaScript
+                span
+                  img(src='/img/logos/angular-logo.png')
+                  h5.center-align Angular
+            .col.s6
+              h4.center-align
+                strong Back End
+              .flex
+                span
+                  img(src='/img/logos/java-logo.png')
+                  h5.center-align Java
+                span
+                  img(src='/img/logos/C-logo.png')
+                  h5.center-align C / C++
+                span
+                  img(src='/img/logos/python-logo.png')
+                  h5.center-align Python
+                span
+                  img(src='/img/logos/node-logo.png')
+                  h5.center-align Node.js
               
+  .section.grey.lighten-3
+    .container
+      .row
+        .col.s12
+          h2.orange-text
+            i.mdi-social-mood.medium
+            strong Enjoyments
+      .row
+        .col.s12.m10.offset-m1
+          ul.tabs#enjoyments.z-depth-1
+            li.tab.col.s3
+              a.active(href='#podcasts') Podcasts
+            li.tab.col.s3
+              a(href='#running') Running
+            li.tab.col.s3
+              a(href='#games') Games
+            li.tab.col.s3
+              a(href='#quotes') Quotes
+          #podcasts.enjoyment.col.s12.white
+            img(src='/img/podcasts/hi.jpeg')
+            img(src='/img/podcasts/bombcast.jpg')
+            img(src='/img/podcasts/ra.jpeg')
+            img(src='/img/podcasts/pm.jpeg')
+            img(src='/img/podcasts/htde.jpeg')
+            img(src='/img/podcasts/js5.jpeg')
+            img(src='/img/podcasts/su.jpeg')
+            img(src='/img/podcasts/taz.jpeg')
+            img(src='/img/podcasts/beastcast.jpeg')
+            img(src='/img/podcasts/jsj.jpeg')
+            img(src='/img/podcasts/serial.jpeg')
+            img(src='/img/podcasts/trh.jpeg')
+            img(src='/img/podcasts/cortex.jpeg')
+            img(src='/img/podcasts/aia.jpeg')
+            img(src='/img/podcasts/sn.jpeg')
+            img(src='/img/podcasts/dhnj.jpeg')
+          #running.enjoyment.col.s12.white
+            
+            .slider
+              ul.slides
+                li
+                  img(src='/img/running/brooks_inflatable.jpg')
+                  .caption.left-align
+                    h3 Half-Marathon
+                    h4 Rock & Roll 2015
+                li
+                  img(src='/img/running/newshoes.jpg')
+                  .caption.center-align
+                    h3 Trusty Companions
+                    h4.light.yellow-text.text-lighten-1 
+                      strong Burn Bright
+                li
+                  img(src='/img/running/jogg.jpg')
+                  .caption.left-align
+                    h3 Smiles
+                    h4 Victory Lap
+          #games.enjoyment.col.s12.white
+            h4 Games
+          #quotes.enjoyment.col.s12.white 
+            h4 Quotes
+          
+  .section
+    .container
+      .row
+        .col.s12
+          h2.green-text.text-darken-1
+            i.mdi-av-my-library-books.medium
+            strong Library
