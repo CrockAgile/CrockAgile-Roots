@@ -22,10 +22,6 @@ block content
           .card.orange.z-depth-2
             .card-image#prof
               img(src='/img/prof2.jpg')
-              span.card-title.orange-text
-                h4 
-                  strong About Me 
-                  i.fa.fa-arrow-right
             .card-content.white-text
               p#bio A Programmer &amp Physicist who enjoys 
                 strong running
@@ -84,15 +80,15 @@ block content
         .col.s12.m10.offset-m1
           ul.tabs#enjoyments.z-depth-1
             li.tab.col.s3
-              a.active(href='#podcasts').flow-text
+              a(href='#podcasts').flow-text
                 i.fa.fa-headphones
             li.tab.col.s3
               a(href='#running').flow-text
                 i.fa.fa-heartbeat
-            li.tab.col.s3
-              a(href='#games').flow-text
-                i.fa.fa-trophy
-            li.tab.col.s3
+            //- li.tab.col.s3
+            //-   a(href='#games').flow-text
+            //-     i.fa.fa-trophy
+            li.active.tab.col.s3
               a(href='#quotes').flow-text
                 i.fa.fa-quote-right
           #podcasts.enjoyment.col.s12.white
@@ -113,7 +109,6 @@ block content
             img(src='/img/podcasts/sn.jpeg')
             img(src='/img/podcasts/dhnj.jpeg')
           #running.enjoyment.col.s12.white
-            
             .slider
               ul.slides
                 li
@@ -132,11 +127,14 @@ block content
                   .caption.left-align
                     h3 Smiles
                     h4 Victory Lap
-          #games.enjoyment.col.s12.white
-            h4 Games
-          #quotes.enjoyment.col.s12.white 
-            h4 Quotes
-          
+          //- #games.enjoyment.col.s12.white
+          //-   h4 Games
+          #quotes.active.enjoyment.col.s12.white
+            .fade-quotes
+              h3 What man is a man who does not make the world better?
+              h3 The top has no limits. We can keep on climbing.
+              h3 These quotes are going too fast.
+      
   .section
     .container
       .row
