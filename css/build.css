@@ -133,6 +133,9 @@ footer.page-footer .row {
   height: 144px;
   padding: 10px;
 }
+blockquote {
+  border-color: #ff9800;
+}
 #quotes .fade-quotes {
   position: relative;
   margin: 15% auto 0 auto;
