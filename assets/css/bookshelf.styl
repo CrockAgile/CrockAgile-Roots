@@ -1,0 +1,37 @@
+$brown-darken-3 = #4e342e
+$brown-lighten-1 = #8d6e63
+$brown = #795548
+
+.bookshelf
+  height: 100%
+  border: 10px $brown-darken-3 solid
+  background-image: linear-gradient(
+    $brown 0px,
+    $brown 220px,
+    $brown-lighten-1 220px,
+    $brown-lighten-1 230px)
+  background-size: 10px 230px
+  overflow: hidden
+  z-index: 0
+
+  .book
+    background-color: red
+    border: 1px solid blue
+    float: left
+    height: 200px
+    width: 80px
+    color: white
+    font-size: 0.9em
+    margin: 20px 0 10px 0
+    transition: transform 0.3s ease
+    &:hover
+      transform: scale(1.2)
+      z-index: 50
+    h2
+      padding: 0
+      font-size: 1em
+      width: 170px
+    h3
+      padding: 0
+      font-size: 0.7em
+      width: 150px
