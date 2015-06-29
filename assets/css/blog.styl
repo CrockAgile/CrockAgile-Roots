@@ -1,0 +1,26 @@
+$orange-d2 = #fb8c00
+$green-d1 = #43A047
+
+.post-card
+  margin: 10px 10px 0 0
+  width: 300px
+  height: 150px
+  flex-shrink: 0
+
+.post-card-container
+  display: flex
+  flex-wrap: wrap
+
+.post-triple-orange
+  background-color: $orange-d2
+
+.post-triple-green
+  background-color: $green-d1
+
+.post-double-orange
+  @media only screen and (max-width: 1410px) and (min-width: 790px)
+    background-color: $orange-d2
+
+.post-double-green
+  @media only screen and (max-width: 1410px) and (min-width: 790px)
+    background-color: $green-d1

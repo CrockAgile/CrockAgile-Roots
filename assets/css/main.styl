@@ -1,3 +1,8 @@
+/* General Page Styling
+*/
+$orange = #FF9800
+$green-d1 = #43A047
+
 html
   height: 100%
 body
@@ -9,14 +14,9 @@ main
   flex: 1 0 auto
 
 footer.page-footer
+  margin-top: 0
   .row
     margin-bottom: 0
-
-#bio
-  font-size: 1.5em
-  strong
-    text-decoration: underline
-    font-size: 1.1em
 
 .logo-svg
   height: 85px
@@ -33,115 +33,14 @@ footer.page-footer
 #logo-large
   @media only screen and (max-width: 680px)
     display: none
-#prof
-  .card-title
-    top: 0
-#contacts
-  border-radius: 20px
-  .collection-item
-    transition: padding-left 0.3s ease-in
-    &:hover
-      padding-left: 20%
 
-#enjoyments
-  .tab a
-    color: #43a047
-    font-weight: bold
-  .indicator
-    background-color: #ff9800
-.enjoyment
-  min-height: 520px
-#podcasts
-  display: flex
-  flex-wrap: wrap
-  align-content: center
-  img
-    height: 144px
-    padding: 10px
 blockquote
-  border-color: #ff9800
-#quotes
-  .fade-quotes
-    position: relative
-    margin: 15% auto 0 auto
-    padding: 10px
-    width: 80%
-    h3
-      &:before
-        content: "\201C"
-        font-size: 1.2em
-        font-weight: bold
-      &:after
-        content: "\201D"
-        font-size: 1.2em
-        font-weight: bold
-      position: absolute
-      opacity: 0
-      overflow: hidden
-      color: #FF9800
-      text-align: left
-      animation: fadeQuote 24s linear infinite 0s
-      &:nth-child(2)
-        animation-delay: 8s
-      &:nth-child(3)
-        animation-delay: 16s
-
-@keyframes fadeQuote
-  0% {
-    opacity: 0
-    animation-timing-function: ease-in
-  }
-  8% {
-    opacity: 1
-  }
-  19% {
-    opacity: 1
-  }
-  25% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
-.flex
-  img
-    margin: 15px 15px 0 15px
-    height: 90px
-    flex-shrink: 0
-  display: flex
-  flex-wrap: wrap
-  flow-direction: column
-  align-items: center
-  justify-content: space-around
+  border-color: $orange
 
 .nav-wrapper.container
   li.active
     a
-      color: #FF9800
+      color: $orange
 
 i
   margin: 0 0.3em 0.3em 0
-
-.post-card
-  margin: 10px 10px 0 0
-  width: 300px
-  height: 150px
-  flex-shrink: 0
-
-.post-card-container
-  display: flex
-  flex-wrap: wrap
-
-.post-triple-orange
-  background-color: #fb8c00 // orange darken 2
-
-.post-triple-green
-  background-color: #43a047 // green darken 1
-
-.post-double-orange
-  @media only screen and (max-width: 1410px) and (min-width: 790px)
-    background-color: #fb8c00 // orange darken 2
-
-.post-double-green
-  @media only screen and (max-width: 1410px) and (min-width: 790px)
-    background-color: #43a047 // green darken 1
