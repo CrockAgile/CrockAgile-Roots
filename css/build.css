@@ -34,14 +34,106 @@
     background-color: #43a047;
   }
 }
-#contacts {
-  border-radius: 20px;
+/* General Page Styling
+*/
+html {
+  height: 100%;
 }
-#contacts .collection-item {
-  transition: padding-left 0.3s ease-in;
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  min-height: 100vh;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
-#contacts .collection-item:hover {
-  padding-left: 20%;
+main {
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+footer.page-footer {
+  margin-top: 0;
+}
+footer.page-footer .row {
+  margin-bottom: 0;
+}
+.logo-svg {
+  height: 85px;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .logo-svg {
+    height: 74px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .logo-svg {
+    left: 120px;
+  }
+}
+#logo-small {
+  display: none;
+}
+@media only screen and (max-width: 680px) {
+  #logo-small {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #logo-large {
+    display: none;
+  }
+}
+blockquote {
+  border-color: #ff9800;
+}
+.nav-wrapper.container li.active a {
+  color: #ff9800;
+}
+i {
+  margin: 0 0.3em 0.3em 0;
+}
+.bookshelf {
+  height: 100%;
+  border: 10px #4e342e solid;
+  background-image: linear-gradient(#795548 0px, #795548 220px, #8d6e63 220px, #8d6e63 230px);
+  background-size: 10px 230px;
+  overflow: hidden;
+  z-index: 0;
+}
+.bookshelf .book {
+  background-color: #d13f19;
+  border: 1px solid #0074d9;
+  float: left;
+  height: 200px;
+  width: 80px;
+  color: #fff;
+  font-size: 0.9em;
+  margin: 20px 0 10px 0;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+.bookshelf .book:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 50;
+}
+.bookshelf .book h2 {
+  padding: 0;
+  font-size: 1em;
+  width: 170px;
+}
+.bookshelf .book h3 {
+  padding: 0;
+  font-size: 0.7em;
+  width: 150px;
 }
 .skills-flex {
   display: -webkit-flex;
@@ -64,7 +156,10 @@
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-.skills-flex img {
+.skills-flex .skill {
+  position: relative;
+}
+.skills-flex .skill img {
   margin: 15px 15px 0 15px;
   height: 90px;
   -webkit-flex-shrink: 0;
@@ -186,104 +281,12 @@
     opacity: 0;
   }
 }
-.bookshelf {
-  height: 100%;
-  border: 10px #4e342e solid;
-  background-image: linear-gradient(#795548 0px, #795548 220px, #8d6e63 220px, #8d6e63 230px);
-  background-size: 10px 230px;
-  overflow: hidden;
-  z-index: 0;
+#contacts {
+  border-radius: 20px;
 }
-.bookshelf .book {
-  background-color: #d13f19;
-  border: 1px solid #0074d9;
-  float: left;
-  height: 200px;
-  width: 80px;
-  color: #fff;
-  font-size: 0.9em;
-  margin: 20px 0 10px 0;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
+#contacts .collection-item {
+  transition: padding-left 0.3s ease-in;
 }
-.bookshelf .book:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  z-index: 50;
-}
-.bookshelf .book h2 {
-  padding: 0;
-  font-size: 1em;
-  width: 170px;
-}
-.bookshelf .book h3 {
-  padding: 0;
-  font-size: 0.7em;
-  width: 150px;
-}
-/* General Page Styling
-*/
-html {
-  height: 100%;
-}
-body {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  min-height: 100vh;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-main {
-  -o-box-flex: 1;
-  box-flex: 1;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-footer.page-footer {
-  margin-top: 0;
-}
-footer.page-footer .row {
-  margin-bottom: 0;
-}
-.logo-svg {
-  height: 85px;
-  position: relative;
-}
-@media only screen and (max-width: 600px) {
-  .logo-svg {
-    height: 74px;
-  }
-}
-@media only screen and (min-width: 993px) {
-  .logo-svg {
-    left: 120px;
-  }
-}
-#logo-small {
-  display: none;
-}
-@media only screen and (max-width: 680px) {
-  #logo-small {
-    display: inline;
-  }
-}
-@media only screen and (max-width: 680px) {
-  #logo-large {
-    display: none;
-  }
-}
-blockquote {
-  border-color: #ff9800;
-}
-.nav-wrapper.container li.active a {
-  color: #ff9800;
-}
-i {
-  margin: 0 0.3em 0.3em 0;
+#contacts .collection-item:hover {
+  padding-left: 20%;
 }
