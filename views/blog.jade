@@ -9,7 +9,7 @@ block content
         i.mdi-notification-event-note.left-align
         | Blog
     .post-card-container
-      -var sortedPosts = site.posts.sort(function(a,b) {
+      -var sortedPosts = site.posts.all().sort(function(a,b) {
       -  return new Date(b.date) - new Date(a.date);
       -});
       -for (var i=0; i< sortedPosts.length; i++)

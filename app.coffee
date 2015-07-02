@@ -22,7 +22,8 @@ module.exports =
     pretty: true
 
   locals:
-    author: 'Jeffrey Crocker'
+    author: 'Jeffrey Crocker',
+    basedir: './',
     pages: [
       {
         title: 'HOME'
