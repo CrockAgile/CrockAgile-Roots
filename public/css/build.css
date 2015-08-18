@@ -34,7 +34,21 @@
     background-color: #43a047;
   }
 }
+.blog-section p,
+.blog-section li {
+  font-size: 1.5em;
+}
+.blog-section h5 {
+  margin: 20px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.blog-section h1 {
+  border-bottom: 5px solid #fb8c00;
+}
 .blog-section h4 {
+  margin-top: 40px;
+  font-size: 3em;
   color: #43a047;
 }
 .blog-section a {
@@ -87,15 +101,6 @@
   padding: 0;
   font-size: 0.7em;
   width: 150px;
-}
-#contacts {
-  border-radius: 20px;
-}
-#contacts .collection-item {
-  transition: padding-left 0.3s ease-in;
-}
-#contacts .collection-item:hover {
-  padding-left: 20%;
 }
 .skills-flex {
   display: -webkit-flex;
@@ -242,6 +247,15 @@
   100% {
     opacity: 0;
   }
+}
+#contacts {
+  border-radius: 20px;
+}
+#contacts .collection-item {
+  transition: padding-left 0.3s ease-in;
+}
+#contacts .collection-item:hover {
+  padding-left: 20%;
 }
 /* General Page Styling
 */

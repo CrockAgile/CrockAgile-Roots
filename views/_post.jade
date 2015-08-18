@@ -1,7 +1,6 @@
 extends ../views/_page
 
 block append content
-  .container
-    h2= post.title
-    h5 by 
-      =author
+  .container.blog-section
+    h1= post.title
+    h5.green-text= author + ' - ' + post.date
