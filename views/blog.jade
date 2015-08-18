@@ -22,7 +22,7 @@ block content
           -classFactors += ' post-double-orange';
         -else
           -classFactors += ' post-double-green';
-        a(href=sortedPosts[i]._url,class='#{classFactors}')
+        a(href=sortedPosts[i]._url.replace(/\\/g,'/'),class='#{classFactors}')
           .card-content.white-text
             span.card-title= sortedPosts[i].title
             p.post-card-date= sortedPosts[i].date
